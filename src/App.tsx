@@ -1,18 +1,11 @@
 import {useState } from "react"
 import Cart from "./components/Cart"
 import CustomButton from "./components/CustomButton"
-import { Control, Controller, FieldError, SubmitHandler, useForm } from "react-hook-form"
-import { FormValues, schema } from "./models/schema"
-import { zodResolver } from "@hookform/resolvers/zod";
+
+
 import useStore from "./store/store"
 
-interface Props {
-  name: keyof FormValues;
-  control: Control<FormValues>;
-  label: string;
-  type?: string;
-  error?: FieldError;
-}
+
 
 function App() {
 
